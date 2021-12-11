@@ -1,40 +1,43 @@
+<link rel="stylesheet" href="../sass/main.css"/>
+
 <header class="head">
     <div class="container">
         <div class="header">
-            <img class="header__logo"
-                src="../images/logo 1.jpg"
-                alt="Logo IceCream"
-                width="199"
-                height="50"/>
+            <div class="header__logo">
+                <img 
+                    src="../images/logo 1.png"
+                    alt="Logo IceCream"
+                    width="199"
+                    height="50"/>
+            </div>
+            <div class="header__background--circle"></div>
 
             <nav class="header__nav">
-                <a class="header__nav-link" href="#home">home</a>
-                <a class="header__nav-link" href="#about-us">about us</a>
-                <a class="header__nav-link" href="#how-it's-made">how it's made?</a>
-                <a class="header__nav-link" href="#our-products">our products</a>
-                <a class="header__nav-link" href="#contact">contact</a>
+                <a class="header__nav-link" href="#home">Home</a>
+                <a class="header__nav-link" href="#about-us">About us</a>
+                <a class="header__nav-link" href="#how-it's-made">How it's made?</a>
+                <a class="header__nav-link" href="#our-products">Our products</a>
+                <a class="header__nav-link" href="#contact">Contact</a>
             </nav>
-            <button class="header__button" type="button">buy now</button>
+            <button class="header__button-buy" type="button">Buy now</button>
 
             <div class="header__burger">
-                <svg class="header__burger--icon" width="20" height="12">
+                <svg class="header__burger--icon" type="button" width="20" height="12">
                     <use href="../images/Burger.svg"></use>
                 </svg>
+            </div>
+            <div class="header__photo--icecream">
+                <img src="../images/header-icecream.png" alt="icecream" width="171" height="410" />
             </div>
             <h1 class="header__title">
                 ice cream<br>made with<br><span class="header__title--passion">passion</span>
             </h1>
-            <button type="button">
-                <a href="#products">products</a>
+            <button class="header__button-products" type="button">
+                <a class="header__button-products--text" href="#products">Products</a>
             </button>
-            <button type="button">
-                <a href="#how-it's-made">how it's made?</a>
+            <button class="header__button-how" type="button">
+                <a class="header__button-how--text" href="#how-it's-made">How it's made?</a>
             </button>
-            <img class="header__photo--icecream"
-                src="../images/header-icecream.jpg"
-                alt="icecream"
-                width="171"
-                height="410"/>
         </div>
     </div>
 
