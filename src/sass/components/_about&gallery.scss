@@ -1,0 +1,163 @@
+
+@media screen and (max-width: 767px) {
+   
+    .how-its-made {
+      background-image: url(./images/mobile-about/background_milk.png),
+      url(./images/mobile-about/background_milk@2x.png);
+      background-size: 100%;
+      background-position-y: 47%;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      padding-top: 125px;
+      padding-bottom: 100px;
+      margin: 0 auto;
+      background-color:#fff5f6;
+    
+    
+      &__label {
+      margin: 0;
+      margin-bottom: 15px;
+      font-family: 'Titan One', cursive;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.17;
+      text-align: center;
+      text-transform: uppercase;
+      color: $mainLabelColor;
+    
+       &__title {
+      margin: auto;
+      margin-bottom: 26px;
+      font-family: 'Titan One', cursive;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $mainTextColor;
+      max-width: 200px;
+    }
+}
+
+    
+    
+    .milk__btn {
+      display: inline-block;
+      margin-bottom: 39px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-right: 37px;
+      padding-left: 37px;
+      min-width: 176px;
+      background: $secondTextColor;
+      border-radius: 22px;
+      border: 0;
+  
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.28;
+      color: $mainTextColor;
+      
+  
+      &__btn:hover,
+      &__btn:focus {
+        background-color: #ecebeb;
+      }
+      }
+    
+    .main-image {
+      width: 280px;
+      height: 279px;
+      display: block;
+      margin: auto;
+    }
+    .milk__description-first {
+      margin: 0;
+      margin-bottom: 32px;
+      width: 220px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.58;
+      color: $mainPColor;
+    }
+    .milk__description-second{
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.58;
+      color: $secondPColor;
+      width: 220px;
+    }
+    .pic {
+      margin-top: 20px;
+      margin-bottom: 21px;
+    }
+    .milk__description {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .cards__number {
+      margin: 0;
+      margin-bottom: 21px;
+      font-family: 'Titan One', cursive;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $mainTextColor;
+      padding-top: 16px;
+    }
+    .cards__img::before {
+        content: url(./images/mobile-about/icon1.png)
+      
+    }
+     .cards__img-second::before {
+        content: url(./images/mobile-about/icon2.png)
+    }
+     .cards__img-third::before {
+        content: url(./images/mobile-about/icon3.png)
+    }
+
+    .cards {
+      padding-top: 0;
+      padding-bottom: 0;
+      display: flex;
+      
+  
+     &__text {
+      margin: 0;
+      width: 230px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.67;
+      color: $mainPColor;
+     
+       &__img {
+        margin-bottom: 38px;
+      }
+    }
+    
+    
+    .item-pic {
+      margin-bottom: 16px;
+    }
+    
+      
+    .cards__img-second {
+          margin-bottom: 38px;
+       }
+    .cards__list{
+         display: block;
+         
+       }
+    .gallery__img {
+      width: 100%;
+    }
+}
