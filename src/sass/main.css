@@ -56,14 +56,110 @@ img {
 }
 
 .head {
-  width: 100%;
+  width: 320px;
   height: 502px;
   background: #FFB8CA;
 }
 
-.header__nav,
+.header {
+  width: 100%;
+  height: 502px;
+}
+
+.header__logo {
+  width: 199px;
+  height: 50px;
+  margin-top: 6px;
+}
+
+.header__background--circle {
+  position: absolute;
+  width: 346px;
+  height: 344px;
+  left: 36px;
+  top: 83px;
+  border-radius: 50%;
+  background: #FFA5BA;
+}
+
 .header__burger {
+  position: absolute;
+  left: 280px;
+  top: 25px;
+  fill: #D41443;
+}
+
+.header__nav, .header__button-buy {
   display: none;
+}
+
+.header__title {
+  position: absolute;
+  width: 218px;
+  height: 106px;
+  left: 20px;
+  top: 193px;
+  font-size: 26px;
+  line-height: 1.154;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header__title--passion {
+  font-size: 48px;
+  color: #D41443;
+}
+
+.header__button-products {
+  position: absolute;
+  width: 62.4px;
+  height: 24px;
+  left: 20px;
+  top: 318px;
+  background: #D41443;
+  border-radius: 20px;
+  border: none;
+}
+
+.header__button-products--text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header__button-how {
+  position: absolute;
+  width: 82.8px;
+  height: 24px;
+  left: 90.4px;
+  top: 318px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+}
+
+.header__button-how--text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  color: #D41443;
+  text-decoration: none;
+}
+
+.header__photo--icecream {
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  left: 117px;
+  top: 92px;
 }
 
 .natural {
