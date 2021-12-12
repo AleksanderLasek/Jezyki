@@ -1,39 +1,56 @@
-<div class="header">
+<header class="head">
     <div class="container">
-        <img class="header__logo"
-            src="../images/logo 1.jpg"
-            alt="Logo IceCream"
-            width="199"
-            height="50"/>
-        <div class="header__hamburger">
-            <svg class="header__hamburger--icon">
-                <use href="../images/icons.svg$icon-hamburger"></use>
-            </svg>
-            <svg class="header__hamburger--icon">
-                <use href="../images/icons.svg$icon-hamburger"></use>
-            </svg>
-            <svg class="header__hamburger--icon">
-                <use href="../images/icons.svg$icon-hamburger"></use>
-            </svg>
-        </div>
-        <div class="header__title">
-            ice cream<br>made with<br><span class="header__title--passion">passion</span>
-        </div>
-        <button type="button">products</button>
-        <button type="button">how it's made?</button>
-        <img class="header__photo--icecream"
-            src="../images/header-icecream.jpg"
-            alt="icecream"
-            width="171"
-            height="410"/>
-    </div>
-</div>
+        <div class="header">
+            <img class="header__logo"
+                src="../images/logo 1.jpg"
+                alt="Logo IceCream"
+                width="199"
+                height="50"/>
 
-<div class="mobile-menu">
-    <button type="button">buy now</button>
-    <a href="x">home</a>
-    <a href="x">about us</a>
-    <a href="x">how it's made?</a>
-    <a href="x">our products</a>
-    <a href="x">contact</a>
-</div>
+            <nav class="header__nav">
+                <a class="header__nav-link" href="#home">home</a>
+                <a class="header__nav-link" href="#about-us">about us</a>
+                <a class="header__nav-link" href="#how-it's-made">how it's made?</a>
+                <a class="header__nav-link" href="#our-products">our products</a>
+                <a class="header__nav-link" href="#contact">contact</a>
+            </nav>
+            <button class="header__button" type="button">buy now</button>
+
+            <div class="header__burger">
+                <svg class="header__burger--icon" width="20" height="12">
+                    <use href="../images/Burger.svg"></use>
+                </svg>
+            </div>
+            <h1 class="header__title">
+                ice cream<br>made with<br><span class="header__title--passion">passion</span>
+            </h1>
+            <button type="button">
+                <a href="#products">products</a>
+            </button>
+            <button type="button">
+                <a href="#how-it's-made">how it's made?</a>
+            </button>
+            <img class="header__photo--icecream"
+                src="../images/header-icecream.jpg"
+                alt="icecream"
+                width="171"
+                height="410"/>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__close">
+            <svg class="mobile-menu__close--icon" width="14" height="14">
+                <use href="../images/close.svg"></use>
+            </svg>
+        </div>
+        <button class="mobile-menu__button" type="button">buy now</button>
+        <nav class="mobile-menu__nav">
+            <a class="mobile-menu__nav-link" href="#home">home</a>
+            <a class="mobile-menu__nav-link" href="#about-us">about us</a>
+            <a class="mobile-menu__nav-link" href="#how-it's-made">how it's made?</a>
+            <a class="mobile-menu__nav-link" href="#our-products">our products</a>
+            <a class="mobile-menu__nav-link" href="#contact">contact</a>
+        </nav>
+    </div>
+</header>
