@@ -2,17 +2,19 @@
     width: 320px;
     height: 502px;
     background: #FFB8CA;
+    position: relative;
+    overflow: hidden;
 }
 
 .header {
     width: 100%;
     height: 502px;
-    
 
     &__logo {
         width: 199px;
         height: 50px;
         margin-top: 6px;
+        left: 20px;
     }
 
     &__background--circle {
@@ -29,12 +31,25 @@
         position: absolute;
         left: 280px;
         top: 25px;
-        fill: #D41443;
+        width: 20px;
+        height: 12px;
+        background-image: url(../images/Burger.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+        &:focus ~ .mobile-menu {
+            transform: translate(0, 0);
+            transition: transform 1s ease-in;
+        }
     }
 
     &__nav,
     &__button-buy {
-    display: none;
+        display: none;
     }
 
     &__title {
@@ -76,6 +91,11 @@
             color: #FFFFFF;
             text-decoration: none;
         }
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
     }
 
     &__button-how {
@@ -95,6 +115,11 @@
             font-size: 8px;
             color: #D41443;
             text-decoration: none;
+        }
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
         }
     }
 
