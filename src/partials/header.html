@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../sass/main.css"/>
-
+<body>
 <header class="head">
     <div class="container">
         <div class="header">
@@ -21,11 +21,7 @@
             </nav>
             <button class="header__button-buy" type="button">Buy now</button>
 
-            <div class="header__burger">
-                <svg class="header__burger--icon" type="button" width="20" height="12">
-                    <use href="../images/Burger.svg"></use>
-                </svg>
-            </div>
+            <div class="header__burger" type="button" data-mobile-open></div>
             <div class="header__photo--icecream">
                 <img src="../images/header-icecream.png" alt="icecream" width="171" height="410" />
             </div>
@@ -41,19 +37,19 @@
         </div>
     </div>
 
-    <div class="mobile-menu">
-        <div class="mobile-menu__close">
-            <svg class="mobile-menu__close--icon" width="14" height="14">
-                <use href="../images/close.svg"></use>
-            </svg>
-        </div>
-        <button class="mobile-menu__button" type="button">buy now</button>
+    <div class="mobile-menu active" data-mobile>
+        <div class="mobile-menu__close" data-mobile-close></div>
+        <button class="mobile-menu__button" type="button">
+            Buy now<div class="mobile-menu__button-icon"></div>
+        </button>
         <nav class="mobile-menu__nav">
-            <a class="mobile-menu__nav-link" href="#home">home</a>
-            <a class="mobile-menu__nav-link" href="#about-us">about us</a>
-            <a class="mobile-menu__nav-link" href="#how-it's-made">how it's made?</a>
-            <a class="mobile-menu__nav-link" href="#our-products">our products</a>
-            <a class="mobile-menu__nav-link" href="#contact">contact</a>
+            <a class="mobile-menu__nav-link--home" href="#home">Home</a>
+            <a class="mobile-menu__nav-link" href="#about-us">About us</a>
+            <a class="mobile-menu__nav-link" href="#how-it's-made">How it's made?</a>
+            <a class="mobile-menu__nav-link" href="#our-products">Our products</a>
+            <a class="mobile-menu__nav-link" href="#contact">Contact</a>
         </nav>
     </div>
 </header>
+<script src="../js/mobile-menu.js"></script>
+</body>
