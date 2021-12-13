@@ -1,0 +1,90 @@
+div.mobile-menu.active {
+    transform: translate(320px, -100%);
+    transition: transform 300ms ease;
+}
+
+.mobile-menu {
+    width: 250px;
+    height: 502px;
+    background: #E17992;
+    transform: translate(70px, -100%);
+    transition: transform 300ms ease;
+
+    &__close {
+        width: 14px;
+        height: 14px;
+        position: relative;
+        left: 208px;
+        top: 23px;
+        background-image: url(../images/close.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+
+    &__button {
+        position: relative;
+        width: 209px;
+        height: 44px;
+        left: 21px;
+        top: 60px;
+        background: #FFFFFF;
+        border-radius: 22px;
+        border: none;
+
+        font-family: DM Sans;
+        font-weight: bold;
+        font-size: 16px;
+        color: #D41443;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+
+
+        &-icon {
+            width: 7px;
+            height: 10px;
+            margin-left: 16px;
+            margin-top: 2px;
+            display: inline-block;
+            background-image: url(../images/buy-now.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__nav {
+        position: relative;
+        width: 102px;
+        height: 181px;
+        left: 21px;
+        top: 93px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &-link {
+            font-family: DM Sans;
+            font-weight: bold;
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+
+            &:hover,
+            &:focus {
+                cursor: pointer;
+            }
+
+            &--home {
+                @extend .mobile-menu__nav-link;
+                color: #D41443;
+            }
+        }
+    }
+}
