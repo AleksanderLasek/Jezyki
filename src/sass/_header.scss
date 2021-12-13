@@ -1,0 +1,108 @@
+.head {
+    width: 320px;
+    height: 502px;
+    background: #FFB8CA;
+}
+
+.header {
+    width: 100%;
+    height: 502px;
+    
+
+    &__logo {
+        width: 199px;
+        height: 50px;
+        margin-top: 6px;
+    }
+
+    &__background--circle {
+        position: absolute;
+        width: 346px;
+        height: 344px;
+        left: 36px;
+        top: 83px;
+        border-radius: 50%;
+        background: #FFA5BA;
+    }
+
+    &__burger {
+        position: absolute;
+        left: 280px;
+        top: 25px;
+        fill: #D41443;
+    }
+
+    &__nav,
+    &__button-buy {
+    display: none;
+    }
+
+    &__title {
+        position: absolute;
+        width: 218px;
+        height: 106px;
+        left: 20px;
+        top: 193px;
+        font-size: 26px;
+        line-height: 1.154;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: normal;
+
+        &--passion {
+            font-size: 48px;
+            color: #D41443;
+        }
+    }
+
+    &__button-products {
+        position: absolute;
+        width: 62.4px;
+        height: 24px;
+        left: 20px;
+        top: 318px;
+        background: #D41443;
+        border-radius: 20px;
+        border: none;
+
+        &--text {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    &__button-how {
+        position: absolute;
+        width: 82.8px;
+        height: 24px;
+        left: 90.4px;
+        top: 318px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        border: none;
+
+        &--text {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8px;
+            color: #D41443;
+            text-decoration: none;
+        }
+    }
+
+    &__photo--icecream {
+        width: 171px;
+        height: 410px;
+        position: absolute;
+        left: 117px;
+        top: 92px;
+    }
+}

@@ -1,0 +1,112 @@
+.contacts__headline{
+   display: none;
+}
+
+.contacts__list-box{
+    height: 1321px;
+    display: flex;
+    
+}
+
+// .contacts__list{
+
+// }
+
+.buttons__section{
+    width: 161.45px;
+    height: 98px;
+}
+
+.cafe{
+    border-color: $secondLabelColor;
+    color:$secondTextColor;
+    border-radius: 4px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+}
+
+.foodtrack{
+    border-color: #C2E297;
+    color:$secondTextColor;
+    border-radius: 4px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.city{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    font-style: normal;
+    color:$mainPColor;
+}
+
+.city-text{
+    color:$secondPColor;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+
+}
+
+.weekly{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    color:$mainPColor;
+    font-style: normal;
+}
+
+.timetable{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    color:$mainLabelColor;
+}
+
+.contacts__mail,
+.contacts__tel{
+    font-size: 12px;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-style: normal;
+    color:$secondPColor;
+} 
+
+.cafe--chicago, .cafe--new-york, .foodtrack--los-angeles{
+
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+}
+
+.locations{
+    color:$secondTextColor;
+    border-radius: 22px;
+    background-color: #D41342;
+    width: 161.45px;
+    height: 44px;
+}
+
+.franchise{
+    color:$mainTextColor;
+    border-radius: 22px;
+    background-color: $secondTextColor;
+    width: 161px;
+    height: 44px;
+}
