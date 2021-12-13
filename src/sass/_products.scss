@@ -103,13 +103,8 @@
   left: 16px;
   right: 16px;
   bottom: 346px;
-<<<<<<< Updated upstream:src/sass/_products.scss
   background-image: url('../images/product-2.png');
-=======
-  background-image: url(../images/product__image_1.png);
->>>>>>> Stashed changes:src/sass/products/products.scss
 }
-
 .products__card_2::before {
   content: '';
   position: absolute;
@@ -208,7 +203,7 @@
   right: 120px;
   bottom: 41px;
   border-style: none;
-  background: url(../src/images/arrow-right.png);
+  background: url(../images/arrow-right.png);
 }
 
 .arrow:hover {
