@@ -11,6 +11,7 @@
         "components/_about&gallery.scss",
         "components/_reviews.scss",
         "_contacts.scss"
+
     ],
     "names": [],
     "file": "main.css"
