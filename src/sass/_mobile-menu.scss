@@ -1,13 +1,14 @@
-div.mobile-menu.active {
-    transform: translate(320px, -100%);
-    transition: transform 300ms ease;
+div.mobile-menu.disactive {
+    transform: translateX(100%);
 }
 
 .mobile-menu {
     width: 250px;
     height: 502px;
     background: #E17992;
-    transform: translate(70px, -100%);
+    position: absolute;
+    top: 0;
+    right: 0;
     transition: transform 300ms ease;
 
     &__close {

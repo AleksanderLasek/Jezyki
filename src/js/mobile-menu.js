@@ -9,6 +9,6 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.mobile.classList.toggle('active');
+    refs.mobile.classList.toggle('disactive');
   }
 })();
