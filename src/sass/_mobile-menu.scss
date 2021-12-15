@@ -17,7 +17,7 @@ div.mobile-menu.disactive {
         position: relative;
         left: 208px;
         top: 23px;
-        background-image: url(../images/close.svg);
+        background-image: url(./images/close.svg);
         background-size: contain;
         background-repeat: no-repeat;
         
@@ -36,7 +36,6 @@ div.mobile-menu.disactive {
         background: #FFFFFF;
         border-radius: 22px;
         border: none;
-
         font-family: DM Sans;
         font-weight: bold;
         font-size: 16px;
@@ -49,12 +48,13 @@ div.mobile-menu.disactive {
 
 
         &-icon {
-            width: 7px;
-            height: 10px;
-            margin-left: 16px;
-            margin-top: 2px;
+            position: relative;
+            width: 8px;
+            height: 12px;
+            left: 15px;
+            top: 4px;
             display: inline-block;
-            background-image: url(../images/buy-now.svg);
+            background-image: url(./images/buy-now.svg);
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -88,4 +88,17 @@ div.mobile-menu.disactive {
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        height: 100vw;
+        z-index: 4;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile-menu {
+        display: none;
+    }   
 }
