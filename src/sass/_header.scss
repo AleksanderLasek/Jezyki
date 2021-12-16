@@ -34,17 +34,13 @@
         top: -18px;
         width: 20px;
         height: 12px;
-        background-image: url('./images/Burger.svg');
+        background-image: url(./images/Burger.svg);
         background-size: contain;
         background-repeat: no-repeat;
 
         &:hover,
         &:focus {
             cursor: pointer;
-        }
-        &:focus ~ .mobile-menu {
-            transform: translate(0, 0);
-            transition: transform 1s ease-in;
         }
     }
 
@@ -144,8 +140,6 @@
 @media screen and (min-width: 768px) {
     .head {
         height: 399px;
-        background: #FFB8CA;
-        position: relative;
         overflow: visible;
     }
 
@@ -291,6 +285,7 @@
                 position: relative;
                 font-family: Titan One;
                 font-size: 28px;
+                letter-spacing: 0.04em;
                 color: #D41443;
                 top: -12px;
                 left: 12px;
@@ -315,6 +310,184 @@
             top: -607px;
             left: 25px;
             z-index: 3;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .head {
+        height: 665px;
+        overflow: hidden;
+    }
+
+    .header {
+        width: 100%;
+        height: 665px;
+
+        &__logo {
+            margin-top: 37px;
+            position: relative;
+            left: -69px;
+        }
+
+        &__nav {
+            position: relative;
+            display: flex;
+            width: 541px;
+            height: 21px;
+            top: -575px;
+            left: 240px;
+            text-decoration: none;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+
+            &-link {
+                font-family: DM Sans;
+                font-weight: bold;
+                font-size: 16px;
+                text-decoration: none;
+                color: #fff;
+                
+                &:hover,
+                &:focus {
+                    color: #D41443;
+                    cursor: pointer;
+                }
+
+                &--home {
+                    @extend .header__nav-link;
+                    color: #D41443;
+                }
+            }
+        }
+
+        &__background--circle {
+            width: 538px;
+            height: 538px;
+            left: 359px;
+            top: -35px;
+            z-index: 1;
+        }
+
+        &__burger {
+            display: none;
+        }
+
+        &__button-buy {
+            left: 889px;
+            top: -608px;
+            
+        }
+
+        &__title {
+            width: 277px;
+            height: 137px;
+            top: -1084px;
+            font-size: 38px;
+            line-height: 1.131;
+
+            &--passion {
+                font-size: 58px;
+            }
+        }
+
+        &__button-products,
+        &__button-how  {
+            top: -1227px;
+        }
+
+        &__button-products {
+            width: 104px;
+            height: 40px;
+            left: 0;
+
+            &--text {
+                font-size: 14px;
+            }
+        }
+
+        &__button-how {
+            width: 138px;
+            height: 40px;
+            left: 15px;
+        
+            &--text {
+                font-size: 14px;
+            }
+        }
+
+        &__photo--icecream {
+            width: 236px;
+            height: 557px;
+            left: 478px;
+            top: -591px;
+            z-index: 2;
+        }
+
+        &__photo--bio-eco {
+            top: -963px;
+            left: -285px;
+            width: 188px;
+            height: 191px;
+        }
+
+        &__bio-eco {
+            top: -1027px;
+            left: -250px;
+            width: 200px;
+
+            &--text {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            &--icon {
+                width: 26px;
+                height: 26px;
+                margin-top: 20px;
+            }
+        }
+
+        &__numbers {
+            width: 92px;
+            height: 76px;
+           
+            &--1 {
+                top: -1325px;
+                left: 331px;
+            }
+
+            &--2 {
+                top: -1234px;
+                left: 235px;
+            }
+
+
+            &--circle {
+                width: 30px;
+                height: 30px;
+                left: 61px;
+            }
+
+            &-data {
+                font-size: 46px;
+                top: -25px;
+                left: 25px;
+            }
+
+            &-place {
+                font-size: 14px;
+                top: -20px;
+                right: 15px;
+            }
+        }
+
+        &__photo--soo-tasty {
+            width: 293px;
+            height: 232px;
+            top: -1194px;
+            left: 763px;
         }
     }
 }

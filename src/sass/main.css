@@ -101,15 +101,6 @@ img {
   cursor: pointer;
 }
 
-.header__burger:focus ~ .mobile-menu {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  -webkit-transition: -webkit-transform 1s ease-in;
-  transition: -webkit-transform 1s ease-in;
-  transition: transform 1s ease-in;
-  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
-}
-
 .header__title {
   position: relative;
   width: 218px;
@@ -210,8 +201,6 @@ img {
 @media screen and (min-width: 768px) {
   .head {
     height: 399px;
-    background: #FFB8CA;
-    position: relative;
     overflow: visible;
   }
   .header {
@@ -334,6 +323,7 @@ img {
     position: relative;
     font-family: Titan One;
     font-size: 28px;
+    letter-spacing: 0.04em;
     color: #D41443;
     top: -12px;
     left: 12px;
@@ -355,6 +345,157 @@ img {
     top: -607px;
     left: 25px;
     z-index: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .head {
+    height: 665px;
+    overflow: hidden;
+  }
+  .header {
+    width: 100%;
+    height: 665px;
+  }
+  .header__logo {
+    margin-top: 37px;
+    position: relative;
+    left: -69px;
+  }
+  .header__nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 541px;
+    height: 21px;
+    top: -575px;
+    left: 240px;
+    text-decoration: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+  }
+  .header__nav-link, .header__nav-link--home {
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .header__nav-link:hover, .header__nav-link--home:hover, .header__nav-link:focus, .header__nav-link--home:focus {
+    color: #D41443;
+    cursor: pointer;
+  }
+  .header__nav-link--home {
+    color: #D41443;
+  }
+  .header__background--circle {
+    width: 538px;
+    height: 538px;
+    left: 359px;
+    top: -35px;
+    z-index: 1;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__button-buy {
+    left: 889px;
+    top: -608px;
+  }
+  .header__title {
+    width: 277px;
+    height: 137px;
+    top: -1084px;
+    font-size: 38px;
+    line-height: 1.131;
+  }
+  .header__title--passion {
+    font-size: 58px;
+  }
+  .header__button-products, .header__button-how {
+    top: -1227px;
+  }
+  .header__button-products {
+    width: 104px;
+    height: 40px;
+    left: 0;
+  }
+  .header__button-products--text {
+    font-size: 14px;
+  }
+  .header__button-how {
+    width: 138px;
+    height: 40px;
+    left: 15px;
+  }
+  .header__button-how--text {
+    font-size: 14px;
+  }
+  .header__photo--icecream {
+    width: 236px;
+    height: 557px;
+    left: 478px;
+    top: -591px;
+    z-index: 2;
+  }
+  .header__photo--bio-eco {
+    top: -963px;
+    left: -285px;
+    width: 188px;
+    height: 191px;
+  }
+  .header__bio-eco {
+    top: -1027px;
+    left: -250px;
+    width: 200px;
+  }
+  .header__bio-eco--text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .header__bio-eco--icon {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+  }
+  .header__numbers {
+    width: 92px;
+    height: 76px;
+  }
+  .header__numbers--1 {
+    top: -1325px;
+    left: 331px;
+  }
+  .header__numbers--2 {
+    top: -1234px;
+    left: 235px;
+  }
+  .header__numbers--circle {
+    width: 30px;
+    height: 30px;
+    left: 61px;
+  }
+  .header__numbers-data {
+    font-size: 46px;
+    top: -25px;
+    left: 25px;
+  }
+  .header__numbers-place {
+    font-size: 14px;
+    top: -20px;
+    right: 15px;
+  }
+  .header__photo--soo-tasty {
+    width: 293px;
+    height: 232px;
+    top: -1194px;
+    left: 763px;
   }
 }
 
@@ -449,13 +590,13 @@ div.mobile-menu.disactive {
 }
 
 .mobile-menu__nav-link:hover, .mobile-menu__nav-link--home:hover, .mobile-menu__nav-link:focus, .mobile-menu__nav-link--home:focus {
+  color: #D41443;
   cursor: pointer;
 }
 
 .mobile-menu__nav-link--home {
   color: #D41443;
 }
-
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
