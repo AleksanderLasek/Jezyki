@@ -456,6 +456,7 @@ div.mobile-menu.disactive {
   color: #D41443;
 }
 
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     height: 100vw;
@@ -1214,6 +1215,9 @@ div.mobile-menu.disactive {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    display: block;
+  }
   .how-its-made {
     background-image: url(../images/mobile-about/background_milk.png), url(../images/mobile-about/background_milk@2x.png);
     background-size: 100%;
@@ -1236,7 +1240,7 @@ div.mobile-menu.disactive {
     text-transform: uppercase;
     color: #FFA5BA;
   }
-  .how-its-made__label__title {
+  .how-its-made__title {
     margin: auto;
     margin-bottom: 26px;
     font-family: 'Titan One', cursive;
@@ -1268,6 +1272,16 @@ div.mobile-menu.disactive {
   }
   .milk__btn:hover, .milk__btn:focus {
     background-color: #ecebeb;
+  }
+  .milk__btn::after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.61633 1L6.04401 5L1.61633 9' stroke='%23D41443' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    position: relative;
+    left: 15px;
   }
   .main-image {
     width: 280px;
@@ -1369,6 +1383,9 @@ div.mobile-menu.disactive {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    display: block;
+  }
   .how-its-made {
     padding-top: 130px;
     padding-bottom: 140px;
@@ -1385,7 +1402,7 @@ div.mobile-menu.disactive {
     text-transform: uppercase;
     color: #FFA5BA;
   }
-  .how-its-made__label__title {
+  .how-its-made__title {
     margin: 0;
     margin-bottom: 50px;
     font-family: 'Titan One', cursive;
@@ -1416,6 +1433,16 @@ div.mobile-menu.disactive {
   }
   .milk__btn:hover, .milk__btn:focus {
     background-color: #ecebeb;
+  }
+  .milk__btn::after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.61633 1L6.04401 5L1.61633 9' stroke='%23D41443' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    position: relative;
+    left: 15px;
   }
   .milk__description-first {
     margin: 0;
@@ -1470,6 +1497,7 @@ div.mobile-menu.disactive {
   .cards__number {
     margin: 0;
     margin-bottom: 13px;
+    padding-top: 36px;
     font-family: 'Titan One', cursive;
     font-weight: 400;
     font-size: 48px;
@@ -1488,6 +1516,13 @@ div.mobile-menu.disactive {
   }
   .cards__list {
     list-style: none;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .item-pic {
     margin-bottom: 36px;
@@ -1501,7 +1536,10 @@ div.mobile-menu.disactive {
     max-width: -moz-max-content;
     max-width: max-content;
   }
-  .cards:not(:last-child) {
+  .cards__img {
+    margin-right: 60px;
+  }
+  .cards__img-second {
     margin-right: 60px;
   }
   .contacts-image {
@@ -1510,10 +1548,14 @@ div.mobile-menu.disactive {
   .main-image {
     width: 340px;
     height: 339px;
+    margin-right: 17px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    display: block;
+  }
   .how-its-made {
     background-image: url(../images/desktop-about/background_milk.png), url(../images/desktop-about/background_milk@2x.png);
     background-repeat: no-repeat;
@@ -1535,7 +1577,7 @@ div.mobile-menu.disactive {
     text-transform: uppercase;
     color: #FFA5BA;
   }
-  .how-its-made__label__title {
+  .how-its-made__title {
     margin: 0;
     margin-bottom: 100px;
     font-family: 'Titan One', cursive;
@@ -1568,6 +1610,16 @@ div.mobile-menu.disactive {
   .milk__btn:hover, .milk__btn:focus {
     background-color: #ecebeb;
   }
+  .milk__btn::after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.61633 1L6.04401 5L1.61633 9' stroke='%23D41443' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 8px;
+    height: 10px;
+    position: relative;
+    left: 15px;
+  }
   .milk__description {
     margin-top: 50px;
   }
@@ -1581,7 +1633,7 @@ div.mobile-menu.disactive {
     letter-spacing: 0.04em;
     color: #000;
   }
-  .milk__description-first-second {
+  .milk__description-second {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -1625,9 +1677,12 @@ div.mobile-menu.disactive {
   .cards__list {
     list-style: none;
     padding-left: 0;
-  }
-  .cards {
-    width: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .cards__number {
     margin: 0;
@@ -1641,7 +1696,7 @@ div.mobile-menu.disactive {
     text-transform: uppercase;
     color: #D41443;
   }
-  .cards__number__text {
+  .cards__text {
     margin: 0;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
@@ -1659,7 +1714,10 @@ div.mobile-menu.disactive {
     max-width: -moz-max-content;
     max-width: max-content;
   }
-  .cards:not(:last-child) {
+  .cards__img {
+    margin-right: 30px;
+  }
+  .cards__img-second {
     margin-right: 30px;
   }
   .contacts-image {
