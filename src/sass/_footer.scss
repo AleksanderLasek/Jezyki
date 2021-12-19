@@ -1,9 +1,8 @@
 .footer__title {
-    position: absolute;
-    width: 232px;
-    height: 42px;
-    left: 22px;
-    top: 6706px;
+    margin-top: 113px; 
+    padding-left: 22px;
+    width: 232px; 
+    height: 42px; 
     font-family: Titan One;
     font-style: normal;
     font-weight: normal;
@@ -20,6 +19,8 @@
     left: 20px;
     top: 6765px;
     font-family: Titan One;
+    width: 200px; 
+    height: 76px; 
     font-style: normal;
     font-weight: normal;
     font-size: 34px;
@@ -29,7 +30,7 @@
     color: var(--mainTextColor);
 
 }
-/*nie laduje mi styli na localu*/
+
 .footer__social-list {
     display: flex;
     justify-content: flex-end;
@@ -61,7 +62,7 @@
     font-size: 13px;
     line-height: 186%;
     text-align: right;
-    color: var(--mainPColor);
+    color: #D41443;
     text-decoration: none;
     padding-right: 20px;
     
@@ -89,7 +90,7 @@
     line-height: 152%;
     text-align: center;
     /*color: var( );*/
-    color: #fff5f6; 
+    color: #907E82;
     text-decoration: none;
   }
   .line-container {
