@@ -8,6 +8,7 @@
         "_header.scss",
         "_mobile-menu.scss",
         "_products.scss",
+        "components/_products-card.scss",
         "components/_about&gallery.scss",
         "components/_reviews.scss",
         "_contacts.scss"

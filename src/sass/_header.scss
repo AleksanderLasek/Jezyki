@@ -1,38 +1,201 @@
 .head {
-    width: 100%;
-    height: 502px;
-    background: #FFB8CA;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 502px;
+  background: #ffb8ca;
+  position: relative;
+  overflow: hidden;
 }
 
 .header {
+  width: 100%;
+  height: 502px;
+
+  &__logo {
+    width: 199px;
+    height: 50px;
+    margin-top: 6px;
+    display: inline-block;
+  }
+
+  &__background--circle {
+    position: relative;
+    width: 346px;
+    height: 344px;
+    left: 16px;
+    top: 27px;
+    border-radius: 50%;
+    background: #ffa5ba;
+  }
+
+  &__burger {
+    display: inline-block;
+    position: relative;
+    left: 60px;
+    top: -18px;
+    width: 20px;
+    height: 12px;
+    background-image: url('../images/Burger.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+    &:focus ~ .mobile-menu {
+      transform: translate(0, 0);
+      transition: transform 1s ease-in;
+    }
+  }
+
+  &__title {
+    position: relative;
+    width: 218px;
+    height: 106px;
+    top: -618px;
+    font-size: 26px;
+    line-height: 1.154;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+
+    &--passion {
+      font-size: 48px;
+      color: #d41443;
+    }
+  }
+
+  &__button-products {
+    position: relative;
+    width: 62.4px;
+    height: 24px;
+    left: 0;
+    top: -599px;
+    background: #d41443;
+    border-radius: 20px;
+    border: none;
+
+    &--text {
+      font-family: DM Sans;
+      font-weight: normal;
+      font-size: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  &__button-how {
+    position: relative;
+    width: 82.8px;
+    height: 24px;
+    left: 8px;
+    top: -599px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: none;
+
+    &--text {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 8px;
+      color: #d41443;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  &__photo--icecream {
+    width: 171px;
+    height: 410px;
+    position: relative;
+    left: 97px;
+    top: -313px;
+  }
+
+  &__nav,
+  &__button-buy,
+  &__photo--bio-eco,
+  &__bio-eco,
+  &__numbers,
+  &__photo--soo-tasty {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head {
+    height: 399px;
+    background: #ffb8ca;
+    position: relative;
+    overflow: visible;
+  }
+
+  .header {
     width: 100%;
-    height: 502px;
+    height: 399px;
 
     &__logo {
-        width: 199px;
-        height: 50px;
-        margin-top: 6px;
-        display: inline-block;
+      margin-top: 37px;
     }
 
     &__background--circle {
-        position: relative;
-        width: 346px;
-        height: 344px;
-        left: 16px;
-        top: 27px;
-        border-radius: 50%;
-        background: #FFA5BA;
+      width: 324px;
+      height: 322px;
+      left: 273px;
+      top: -60px;
+      z-index: 1;
     }
 
     &__burger {
-        display: inline-block;
+      left: 286px;
+      top: -25px;
+      z-index: 2;
+    }
+
+    &__button-buy {
+      display: inline-block;
+      position: relative;
+      width: 160px;
+      height: 44px;
+      left: 540px;
+      top: -375px;
+      background: #ffffff;
+      border-radius: 22px;
+      border: none;
+      font-family: DM Sans;
+      font-weight: bold;
+      font-size: 16px;
+      color: #d41443;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+      }
+
+      &-icon {
         position: relative;
-        left: 60px;
-        top: -18px;
-        width: 20px;
+        top: 4px;
+        left: 12px;
+        width: 8px;
         height: 12px;
         background-image: url(../images/Burger.svg);
         background-size: contain;
@@ -45,97 +208,38 @@
     }
 
     &__title {
-        position: relative;
-        width: 218px;
-        height: 106px;
-        top: -618px;
-        font-size: 26px;
-        line-height: 1.154;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #fff;
-        font-family: Titan One;
-        font-style: normal;
-        font-weight: normal;
+      width: 162px;
+      height: 80px;
+      top: -690px;
+      font-size: 22px;
+      line-height: 1.136;
 
-        &--passion {
-            font-size: 48px;
-            color: #D41443;
-        }
+      &--passion {
+        font-size: 37px;
+      }
     }
 
-    &__button-products {
-        position: relative;
-        width: 62.4px;
-        height: 24px;
-        left: 0;
-        top: -599px;
-        background: #D41443;
-        border-radius: 20px;
-        border: none;
-
-        &--text {
-            font-family: DM Sans;
-            font-weight: normal;
-            font-size: 8px;
-            color: #FFFFFF;
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &:hover,
-        &:focus {
-            cursor: pointer;
-        }
-    }
-
+    &__button-products,
     &__button-how {
-        position: relative;
-        width: 82.8px;
-        height: 24px;
-        left: 8px;
-        top: -599px;
-        background: #FFFFFF;
-        border-radius: 20px;
-        border: none;
-
-        &--text {
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 8px;
-            color: #D41443;
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &:hover,
-        &:focus {
-            cursor: pointer;
-        }
+      top: -780px;
     }
 
     &__photo--icecream {
-        width: 171px;
-        height: 410px;
-        position: relative;
-        left: 97px;
-        top: -313px;
+      width: 143px;
+      height: 336px;
+      left: 344px;
+      top: -401px;
+      z-index: 2;
     }
 
-    &__nav,
-    &__button-buy,
-    &__photo--bio-eco,
-    &__bio-eco,
-    &__numbers,
-    &__photo--soo-tasty {
-        display: none;
+    &__photo--bio-eco {
+      display: inline-block;
+      position: relative;
+      top: -623px;
+      left: -153px;
+      width: 124px;
+      height: 126px;
     }
-}
 
 @media screen and (min-width: 768px) {
     .head {
