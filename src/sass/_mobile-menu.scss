@@ -11,15 +11,21 @@ div.mobile-menu.disactive {
   right: 0;
   transition: transform 300ms ease;
 
-  &__close {
-    width: 14px;
-    height: 14px;
-    position: relative;
-    left: 208px;
-    top: 23px;
-    background-image: url(../images/close.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    &__close {
+        width: 14px;
+        height: 14px;
+        position: relative;
+        left: 208px;
+        top: 23px;
+        background-image: url(../images/close.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+    }
 
     &:hover,
     &:focus {
@@ -46,16 +52,17 @@ div.mobile-menu.disactive {
       cursor: pointer;
     }
 
-    &-icon {
-      position: relative;
-      width: 8px;
-      height: 12px;
-      left: 15px;
-      top: 4px;
-      display: inline-block;
-      background-image: url(../images/buy-now.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
+        &-icon {
+            position: relative;
+            width: 8px;
+            height: 12px;
+            left: 15px;
+            top: 4px;
+            display: inline-block;
+            background-image: url(../images/buy-now.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
   }
 
@@ -69,6 +76,11 @@ div.mobile-menu.disactive {
     flex-direction: column;
     justify-content: space-between;
 
+            &:hover,
+            &:focus {
+                color: #D41443;
+                cursor: pointer;
+            }
     &-link {
       font-family: DM Sans;
       font-weight: bold;
