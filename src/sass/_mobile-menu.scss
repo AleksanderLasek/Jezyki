@@ -45,18 +45,18 @@ div.mobile-menu.disactive {
     &:focus {
       cursor: pointer;
     }
-  }
 
-  &-icon {
-    position: relative;
-    width: 8px;
-    height: 12px;
-    left: 15px;
-    top: 4px;
-    display: inline-block;
-    background-image: url(../images/buy-now.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    &-icon {
+      position: relative;
+      width: 8px;
+      height: 12px;
+      left: 15px;
+      top: 3px;
+      display: inline-block;
+      background-image: url(../images/buy-now.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__nav {
