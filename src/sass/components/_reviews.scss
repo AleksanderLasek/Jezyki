@@ -73,6 +73,16 @@
       top: 298px;
       left: 74px;
     }
+
+    &-background {
+      position: absolute;
+      width: 280px;
+      height: 308px;
+      left: -50px;
+      top: -44px;
+      background-color: #fafafa;
+      z-index: -5;
+    }
   }
 
   &__who {
@@ -141,6 +151,13 @@
       &-text-mobile {
         display: none;
       }
+
+      &-background {
+        width: 620px;
+        height: 164px;
+        left: -60px;
+        top: -50px;
+      }
     }
 
     &__who {
@@ -187,6 +204,13 @@
 
       &-text-mobile {
         display: none;
+      }
+
+      &-background {
+        width: 926px;
+        height: 138px;
+        left: -60px;
+        top: -50px;
       }
     }
 
