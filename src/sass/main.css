@@ -214,12 +214,8 @@ html {
 @media screen and (min-width: 768px) {
   .head {
     height: 399px;
-    background: #ffb8ca;
-    position: relative;
-    overflow: hidden;
   }
   .header {
-    width: 100%;
     height: 399px;
   }
   .header__logo {
@@ -366,10 +362,8 @@ html {
 @media screen and (min-width: 1200px) {
   .head {
     height: 665px;
-    overflow: hidden;
   }
   .header {
-    width: 100%;
     height: 665px;
   }
   .header__logo {
@@ -596,11 +590,6 @@ div.mobile-menu.disactive {
           justify-content: space-between;
 }
 
-.mobile-menu__nav:hover, .mobile-menu__nav:focus {
-  color: #d41443;
-  cursor: pointer;
-}
-
 .mobile-menu__nav-link, .mobile-menu__nav-link--home {
   font-family: DM Sans;
   font-weight: bold;
@@ -610,6 +599,7 @@ div.mobile-menu.disactive {
 }
 
 .mobile-menu__nav-link:hover, .mobile-menu__nav-link--home:hover, .mobile-menu__nav-link:focus, .mobile-menu__nav-link--home:focus {
+  color: #d41443;
   cursor: pointer;
 }
 

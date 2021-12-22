@@ -148,13 +148,9 @@ html {
 @media screen and (min-width: 768px) {
   .head {
     height: 399px;
-    background: #ffb8ca;
-    position: relative;
-    overflow: hidden;
   }
 
   .header {
-    width: 100%;
     height: 399px;
 
     &__logo {
@@ -324,11 +320,9 @@ html {
 @media screen and (min-width: 1200px) {
   .head {
     height: 665px;
-    overflow: hidden;
   }
 
   .header {
-    width: 100%;
     height: 665px;
 
     &__logo {

@@ -69,11 +69,6 @@ div.mobile-menu.disactive {
     flex-direction: column;
     justify-content: space-between;
 
-    &:hover,
-    &:focus {
-      color: #d41443;
-      cursor: pointer;
-    }
     &-link {
       font-family: DM Sans;
       font-weight: bold;
@@ -83,6 +78,7 @@ div.mobile-menu.disactive {
 
       &:hover,
       &:focus {
+        color: #d41443;
         cursor: pointer;
       }
 
