@@ -1731,6 +1731,16 @@ div.mobile-menu.disactive {
   left: 74px;
 }
 
+.reviews__quote-background {
+  position: absolute;
+  width: 280px;
+  height: 308px;
+  left: -50px;
+  top: -44px;
+  background-color: #fafafa;
+  z-index: -5;
+}
+
 .reviews__who {
   margin-top: 70px;
   font-family: DM Sans;
@@ -1794,11 +1804,58 @@ div.mobile-menu.disactive {
   .reviews__quote-text-mobile {
     display: none;
   }
+  .reviews__quote-background {
+    width: 620px;
+    height: 164px;
+    left: -60px;
+    top: -50px;
+  }
   .reviews__who {
     margin-top: 68px;
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews {
+    margin-top: 123px;
+  }
+  .reviews__quote {
+    width: 813px;
+    height: 59px;
+    margin-top: 62px;
+    padding-left: 28px;
+    padding-right: 35px;
+    left: 87px;
+    background-image: repeating-linear-gradient(to bottom, rgba(26, 198, 204, 0), rgba(26, 198, 204, 0) 28px, #e1e1e1 29px);
+    background-position-y: -2px;
+  }
+  .reviews__quote::before {
+    left: -8px;
+  }
+  .reviews__quote::after {
+    left: 380px;
+    top: 106px;
+  }
+  .reviews__quote-text {
+    width: 750px;
+    font-size: 16px;
+  }
+  .reviews__quote-text-mobile {
+    display: none;
+  }
+  .reviews__quote-background {
+    width: 926px;
+    height: 138px;
+    left: -60px;
+    top: -50px;
+  }
+  .reviews__who {
+    margin-top: 66px;
+    font-size: 20px;
+    line-height: 37px;
   }
 }
 
@@ -1894,12 +1951,18 @@ div.mobile-menu.disactive {
   font-weight: 500;
   font-style: normal;
   color: #907E82;
+  text-decoration: none;
 }
 
 .cafe--chicago, .cafe--new-york, .foodtrack--los-angeles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  height: 427px;
 }
 
 .locations {
@@ -1916,6 +1979,35 @@ div.mobile-menu.disactive {
   background-color: #fff;
   width: 161px;
   height: 44px;
+}
+
+.grid-1 {
+  height: 132px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(#907E82);
+}
+
+.grid-2 {
+  height: 146px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(#907E82);
+}
+
+.grid-3 {
+  height: 61px;
+}
+
+.grid-1, .grid-2, .grid-3 {
+  width: 179px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer {
