@@ -1663,8 +1663,19 @@ div.mobile-menu.disactive {
   display: none;
 }
 
+.reviews__photos-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .reviews__photo--current {
   display: block;
+  width: 85px;
+  height: 85px;
 }
 
 .reviews__quote {
@@ -1674,6 +1685,7 @@ div.mobile-menu.disactive {
   padding-right: 16px;
   margin-top: 72px;
   position: relative;
+  left: 50px;
   background-image: repeating-linear-gradient(to bottom, rgba(26, 198, 204, 0), rgba(26, 198, 204, 0) 29px, #e1e1e1 31px);
   background-position-y: -3px;
 }
@@ -1710,7 +1722,7 @@ div.mobile-menu.disactive {
 
 .reviews__quote::after {
   content: '';
-  background-image: url("data:image/svg+xml,%3Csvg width='10' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C7133E'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C7133E'/%3E%3C/svg%3E%0A");
   background-repeat: space no-repeat;
   width: 32px;
   height: 4px;
@@ -1731,17 +1743,63 @@ div.mobile-menu.disactive {
 }
 
 .reviews__pagination {
+  margin: 0 auto;
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 72.4px;
+  max-width: 72.4px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    margin-top: 121px;
+  }
+  .reviews__quote {
+    width: 524px;
+    height: 90px;
+    margin-top: 66px;
+    padding-left: 20px;
+    padding-right: 44px;
+    left: 100px;
+    background-image: repeating-linear-gradient(to bottom, rgba(26, 198, 204, 0), rgba(26, 198, 204, 0) 28px, #e1e1e1 30px);
+    background-position-y: -2px;
+  }
+  .reviews__quote::before {
+    left: -21px;
+  }
+  .reviews__quote::after {
+    left: 234px;
+    top: 140px;
+  }
+  .reviews__quote-text {
+    display: block;
+    width: 460px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000;
+    margin: 0 auto;
+  }
+  .reviews__quote-text-mobile {
+    display: none;
+  }
+  .reviews__who {
+    margin-top: 68px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 .contacts__headline {
