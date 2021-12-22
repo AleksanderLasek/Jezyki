@@ -91,7 +91,8 @@
 } 
 
 .cafe--chicago, .cafe--new-york, .foodtrack--los-angeles{
-
+display:grid;
+grid-template-rows: 3;
 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 border-radius: 24px;
 height:427px;
