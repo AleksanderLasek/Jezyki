@@ -142,6 +142,7 @@
         display: none;
       }
     }
+
     &__who {
       margin-top: 68px;
       font-weight: 500;
@@ -151,4 +152,48 @@
   }
 }
 
-//@media screen and (min-width: 768px)
+@media screen and (min-width: 1200px) {
+  .reviews {
+    margin-top: 123px;
+
+    &__quote {
+      width: 813px;
+      height: 59px;
+      margin-top: 62px;
+      padding-left: 28px;
+      padding-right: 35px;
+      left: 87px;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(26, 198, 204, 0),
+        rgba(26, 198, 204, 0) 28px,
+        rgba(225, 225, 225, 1) 29px
+      );
+      background-position-y: -2px;
+
+      &::before {
+        left: -8px;
+      }
+
+      &::after {
+        left: 380px;
+        top: 106px;
+      }
+
+      &-text {
+        width: 750px;
+        font-size: 16px;
+      }
+
+      &-text-mobile {
+        display: none;
+      }
+    }
+
+    &__who {
+      margin-top: 66px;
+      font-size: 20px;
+      line-height: 37px;
+    }
+  }
+}
