@@ -52,6 +52,18 @@
       text-transform: uppercase;
 
       color: #ffa5ba;
+
+      @media screen and (max-width: 767px) {
+        font-family: Titan One;
+        font-size: 26px;
+        line-height: 30px;
+        text-transform: uppercase;
+
+        color: #ffa5ba;
+        margin-top: -150px;
+        margin-bottom: 0px;
+      }
+
       @media screen and (min-width: 768px) {
         font-family: Titan One;
         font-size: 26px;
@@ -78,6 +90,19 @@
       text-transform: uppercase;
 
       color: #d41443;
+
+      @media screen and (max-width: 767px) {
+        font-family: Titan One;
+        font-size: 34px;
+        line-height: 39px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #d41443;
+        margin-bottom: 300px;
+        margin-top: 0px;
+      }
+
       @media screen and (min-width: 768px) {
         font-family: Titan One;
         font-size: 48px;
@@ -85,6 +110,7 @@
         text-transform: uppercase;
 
         color: #d41443;
+        margin-bottom: 140px;
       }
       @media screen and (min-width: 1280px) {
         font-family: Titan One;
@@ -92,6 +118,7 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #d41443;
+        margin-bottom: 270px;
       }
     }
   }
