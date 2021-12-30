@@ -15,7 +15,6 @@
     position: relative;
     padding: 0;
     display: flex;
-
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
       align-content: space-between;
@@ -28,17 +27,15 @@
     @media screen and (min-width: 1200px) {
       justify-content: space-between;
       width: 1054px;
+      left: 20px;
     }
   }
-
   &__section-text {
     text-align: center;
-
     @media screen and (max-width: 767px) {
       margin-bottom: 144px;
       top: 127px;
     }
-
     @media screen and (min-width: 768px) {
       margin-bottom: 150px;
     }
@@ -50,26 +47,21 @@
       font-size: 18px;
       line-height: 21px;
       text-transform: uppercase;
-
       color: #ffa5ba;
-
       @media screen and (max-width: 767px) {
         font-family: Titan One;
         font-size: 26px;
         line-height: 30px;
         text-transform: uppercase;
-
         color: #ffa5ba;
         margin-top: -150px;
         margin-bottom: 0px;
       }
-
       @media screen and (min-width: 768px) {
         font-family: Titan One;
         font-size: 26px;
         line-height: 30px;
         text-transform: uppercase;
-
         color: #ffa5ba;
       }
       @media screen and (min-width: 1200px) {
@@ -78,7 +70,7 @@
         line-height: 34px;
         letter-spacing: 0.04em;
         margin-bottom: 15px;
-
+        margin-left: 60px;
         color: #ffa5ba;
       }
     }
@@ -88,27 +80,22 @@
       line-height: 39px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-
       color: #d41443;
-
       @media screen and (max-width: 767px) {
         font-family: Titan One;
         font-size: 34px;
         line-height: 39px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-
         color: #d41443;
         margin-bottom: 300px;
         margin-top: 0px;
       }
-
       @media screen and (min-width: 768px) {
         font-family: Titan One;
         font-size: 48px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-
         color: #d41443;
         margin-bottom: 140px;
       }
@@ -119,6 +106,7 @@
         text-transform: uppercase;
         color: #d41443;
         margin-bottom: 270px;
+        margin-left: 60px;
       }
     }
   }
