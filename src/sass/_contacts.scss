@@ -19,33 +19,24 @@
 
 .cafe{
     border-color: $secondLabelColor;
-    color:$secondTextColor;
-    border-radius: 4px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-
 }
 
 .foodtrack{
-    border-color: #C2E297;
-    color:$secondTextColor;
+    border-color:$thirdLabelColor;
+}
+
+.cafe,.foodtrack{
+     color:$secondTextColor;
     border-radius: 4px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+    justify-content: flex-start;
+    align-items:flex-start;
 }
-
 .city{
     font-family: DM Sans;
     font-weight: 500;
@@ -96,22 +87,55 @@ grid-template-rows: 3;
 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 border-radius: 24px;
 height:427px;
+<<<<<<< Updated upstream
+padding-bottom:20px;
+background-color: #FFF5F6;
+
+=======
+width:220px;
+margin-bottom: 22px;
+>>>>>>> Stashed changes
 }
 
 .locations{
     color:$secondTextColor;
     border-radius: 22px;
+    border-color: #D41342;
     background-color: #D41342;
     width: 161.45px;
     height: 44px;
+   font-family: DM Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 1.75;
+   display: flex;
+   align-items: center;
+   text-align: center;
+ 
 }
 
 .franchise{
     color:$mainTextColor;
     border-radius: 22px;
+    border-color: var($mainTextColor);
     background-color: $secondTextColor;
     width: 161px;
     height: 44px;
+   font-family: DM Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 1.75;
+   display: flex;
+   align-items: center;
+   text-align: center; 
+  
+}
+
+
+.buttons__section{
+background-color: #FFF5F6;
 }
 
 .grid-1{
@@ -140,5 +164,8 @@ height:427px;
     padding-top: 43px;
     padding-bottom: 43px;
     display: flex;
+    background-color:var($secondTextColor);
+
+
 }
 
