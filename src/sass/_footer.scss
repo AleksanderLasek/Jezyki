@@ -10,12 +10,9 @@
 
 }
 
+
 .footer__title {
-<<<<<<< Updated upstream
   
-=======
-    
->>>>>>> Stashed changes
     width: 232px; 
     font-family: Titan One;
     font-style: normal;
@@ -24,13 +21,9 @@
     line-height: 21px;
     text-transform: uppercase;
     color: #FFA5BA;
+}
 
-<<<<<<< Updated upstream
 .footer__title-second {
-=======
-     &:second {
-    display: block; 
->>>>>>> Stashed changes
     width: 200px;
     font-family: Titan One;
     height: 76px; 
@@ -43,34 +36,18 @@
     color: #d41443;
 
 }
-}
 
 .footer__social-list {
     display: flex;
-<<<<<<< Updated upstream
     justify-content: space-evenly; 
     margin-bottom: 46px;
-=======
-    justify-content: flex-end; 
-    padding-bottom: 46px;
->>>>>>> Stashed changes
     padding-right: 20px;
-    list-style: none;   
-    
-    &:item:not(:last-child) {
-      padding-right: 20px;
+    list-style: none;                                             
 
-<<<<<<< Updated upstream
+}
+
 .footer__social-list-item:not(:last-child) { 
     margin-right: 28px;
-=======
-    &:item { 
-   
-      padding-left: 28px;
-
->>>>>>> Stashed changes
-  }
-  }
   }
 
 .footer__contact-title{
@@ -84,14 +61,11 @@
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
-<<<<<<< Updated upstream
    
-=======
-    padding-right: 20px; 
-    padding-bottom: 43px; 
->>>>>>> Stashed changes
 
-     &:link {
+}
+
+.footer__contact-link {
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
@@ -99,16 +73,9 @@
     text-align: right;
     color: #D41443;
     text-decoration: none;
-<<<<<<< Updated upstream
     padding-right: 20px;
-=======
-    
->>>>>>> Stashed changes
     
   }
-
-}
-
 
   .copyright {
    
@@ -116,7 +83,6 @@
     margin-top: 22px;
     padding-bottom: 25px;
     padding-left: 79px; 
-<<<<<<< Updated upstream
   }
 
 
@@ -131,48 +97,30 @@
     font-weight: bold;
     width: 150px;
     height: 42px; 
-=======
-    padding-right: 91px; 
-
-    &:link {
-    font-style: normal;
-    font-weight: bold;
->>>>>>> Stashed changes
     font-size: 14px;
     line-height: 152%;
     text-align: center;
+    /*color: var( );*/
     color: #907E82;
     text-decoration: none;
   }
-
-  }
-
-  .container-copyright {
-    display: flex;
-    flex-wrap: wrap;  
-    background-color: var(--secondPColor);
-   
-  }
-  
   .line-container {
       padding-right: 0px;
       padding-left: 0px;
     }
 
-  .footer__line {
-    padding: 0px;
-    border: 1px solid #E1E1E1; 
-    width: 320px;  
-  
+  .line {
     
+    border: 1px solid #E1E1E1;
+    margin-top: 43px;
+    margin-top: 0px;
+    max-width: 320px;
   }
 
   .social-list__icon {
     width: 20px;
     height: 20px;
   }
-
-
   .social-list__link {
     display: flex;
     justify-content: center;
@@ -181,35 +129,25 @@
     border-radius: 50%;
     width: 32px;
     height: 32px;
-
-  &:hover,
-  &:focus {
+  }
+  
+  .social-list__link:hover,
+  .social-list__link:focus {
       background-color: #d41443;
     }
  
-  }
-  
-  
 
     @media screen and (min-width: 320px){
-
       
     .footer__title {
           font-size: 19px;
-          margin-bottom: 0px; 
-
-          &:second {
+        }
+    .footer__title-second {
           font-size: 36px;
-          margin-top: 0px; 
         }
-        }
-
-    
     .footer__contact-title {
           font-size: 13px;
-
         }
-
     .footer__contact-link {
           font-size: 14px;
         }
@@ -217,11 +155,13 @@
     .copyright__link {
         font-size: 15px;
       }
-    
+    .line {
+          max-width: 480px;
+        }
+      
       
     @media screen and (min-width:768px) {
       
-<<<<<<< Updated upstream
     .container-footer {
         display: flex;
         justify-content: space-between;
@@ -243,33 +183,12 @@
         word-break: unset;
         align-items: center;
         padding-bottom: 18px;
-=======
-    .footer__container-copy {
-      display: flex;
-      padding-left: 248px;
-      
-      }
-    .footer__right {
-      flex-direction: row; 
-      justify-content: space-between;
-        
-      }
- 
-    .copyright{
-      display: flex;
-      inline-size: initial;
-      word-break: unset;
-      align-items: center;
-      padding-bottom: 18px;
-      padding-top: 29px; 
->>>>>>> Stashed changes
       }
     .social-list__link {
         width: 34px;
         height: 34px;
       }
     .footer__title {
-<<<<<<< Updated upstream
         font-size: 26px;
         line-height: 30px;
         letter-spacing: 0.04em;
@@ -281,87 +200,46 @@
         font-size: 48px;
       line-height: 55px;
       letter-spacing: 0.06em;
-=======
-      width: 340px;  
-      font-size: 26px;
-      line-height: 30px;
-      letter-spacing: 0.04em;
-      max-width: 340px;
-      padding-bottom: 16px;
-      padding-left: 36px; 
-      padding-top: 0;
-
-      &:second {
-      font-size: 48px;
-      line-height: 55px;
-      letter-spacing: 0.06em;
-      padding-left: 36px; 
-      padding-bottom: 91px; 
       }
-
->>>>>>> Stashed changes
-      }
-
-   
     .footer__contact-title {
         font-size: 14px;
       line-height: 186%;
       }
-<<<<<<< Updated upstream
-=======
-
-    .footer__line {
-      
-      padding: 0px;
-      border: 1px solid #E1E1E1; 
-      width: 768px;  
->>>>>>> Stashed changes
       }
-    }
-         
     @media screen and (min-width:1200px) {
-
-      .footer__container-copy {
-        display: flex;
-        padding-left: 248px;
-        
-        }
-         
-      .footer__title {
+      
+      
+      
+    .footer__title {
         font-size: 34px;
         white-space: nowrap;
-        border: 0px;  
-        padding-left: 113px; 
-        padding-bottom: 15px; 
-
-        &:second {
-        font-size: 66px;
-        white-space: nowrap;
-        padding-left: 113px; 
-      }
+         
         
       }
+    .footer__title-second {
+        font-size: 66px;
+        white-space: nowrap;
+      }
+    .footer__left-side {
+        padding-left: 50px;
+      }
+    .footer__right-side {
+        padding-right: 50px;
+      }
+    .line {
+        
+        border-right: none;
+        border-left:none;
+        max-width: 1280px;
+        
+        padding-top: 97px;
+      }
       
-      .container-copyright {
+    .container-copyright {
         padding-bottom: 10px;
         
       }
-      .footer__contact-title {
-        
+    .footer__contact-title {
         margin-bottom: 0;
-        padding-right: 117px; 
       }
-
-      .footer__social-list {
-      margin-top: 34px; 
-      padding-right: 122px; 
-      padding-bottom: 50px; 
-    }
-      .footer__line {
-      
-      padding: 0px;
-      border: 1px solid #E1E1E1; 
-      width: 1200px;  
-      }
-
       }
