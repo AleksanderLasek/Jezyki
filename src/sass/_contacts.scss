@@ -8,9 +8,9 @@
     
 }
 
-// .contacts__list{
-
-// }
+ .contacts__list{
+background-color:#FFF5F6
+ }
 
 .buttons__section{
     width: 161.45px;
@@ -18,11 +18,11 @@
 }
 
 .cafe{
-    border-color: $secondLabelColor;
+    background-color: $secondLabelColor;
 }
 
 .foodtrack{
-    border-color:$thirdLabelColor;
+    background-color:$thirdLabelColor;
 }
 
 .cafe,.foodtrack{
@@ -94,7 +94,7 @@ box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 border-radius: 24px;
 height:427px;
 padding-bottom:20px;
-background-color: #FFF5F6;
+background-color:var($secondTextColor);
 
 width:220px;
 margin-bottom: 22px;
