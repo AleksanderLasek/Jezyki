@@ -6,22 +6,25 @@
   height: 1321px;
   display: flex;
 }
+.contacts__list-box{
+    background-color: #FFF5F6;
+}
 
-// .contacts__list{
-
-// }
+ .contacts__list{
+background-color:#FFF5F6
+ }
 
 .buttons__section {
   width: 161.45px;
   height: 98px;
 }
 
-.cafe {
-  border-color: $secondLabelColor;
+.cafe{
+    background-color: $secondLabelColor;
 }
 
-.foodtrack {
-  border-color: $thirdLabelColor;
+.foodtrack{
+    background-color:$thirdLabelColor;
 }
 
 .cafe,
@@ -95,7 +98,7 @@ box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 border-radius: 24px;
 height:427px;
 padding-bottom:20px;
-background-color: #FFF5F6;
+background-color:var($secondTextColor);
 
 width:220px;
 margin-bottom: 22px;
