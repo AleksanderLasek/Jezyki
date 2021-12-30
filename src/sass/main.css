@@ -86,7 +86,7 @@ html {
   left: 16px;
   top: 27px;
   border-radius: 50%;
-  background: #ffa5ba;
+  background: #FFA5BA;
 }
 
 .header__burger {
@@ -131,7 +131,7 @@ html {
 
 .header__title--passion {
   font-size: 48px;
-  color: #d41443;
+  color: #D41443;
 }
 
 .header__button-products {
@@ -140,7 +140,7 @@ html {
   height: 24px;
   left: 0;
   top: -599px;
-  background: #d41443;
+  background: #D41443;
   border-radius: 20px;
   border: none;
 }
@@ -172,7 +172,7 @@ html {
   height: 24px;
   left: 8px;
   top: -599px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 20px;
   border: none;
 }
@@ -182,7 +182,7 @@ html {
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  color: #d41443;
+  color: #D41443;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,13 +240,13 @@ html {
     height: 44px;
     left: 540px;
     top: -375px;
-    background: #ffffff;
+    background: #fff;
     border-radius: 22px;
     border: none;
     font-family: DM Sans;
     font-weight: bold;
     font-size: 16px;
-    color: #d41443;
+    color: #D41443;
   }
   .header__button-buy:hover, .header__button-buy:focus {
     cursor: pointer;
@@ -335,7 +335,7 @@ html {
     font-family: Titan One;
     font-size: 28px;
     letter-spacing: 0.04em;
-    color: #d41443;
+    color: #D41443;
     top: -12px;
     left: 12px;
   }
@@ -395,13 +395,17 @@ html {
     font-size: 16px;
     text-decoration: none;
     color: #fff;
+    -webkit-transition: color 300ms ease-out;
+    transition: color 300ms ease-out;
   }
   .header__nav-link:hover, .header__nav-link--home:hover, .header__nav-link:focus, .header__nav-link--home:focus {
-    color: #d41443;
+    color: #D41443;
     cursor: pointer;
+    -webkit-transition: color 300ms ease-out;
+    transition: color 300ms ease-out;
   }
   .header__nav-link--home {
-    color: #d41443;
+    color: #D41443;
   }
   .header__background--circle {
     width: 538px;
@@ -547,13 +551,13 @@ div.mobile-menu.disactive {
   height: 44px;
   left: 21px;
   top: 60px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 22px;
   border: none;
   font-family: DM Sans;
   font-weight: bold;
   font-size: 16px;
-  color: #d41443;
+  color: #D41443;
 }
 
 .mobile-menu__button:hover, .mobile-menu__button:focus {
@@ -596,15 +600,19 @@ div.mobile-menu.disactive {
   font-size: 14px;
   text-decoration: none;
   color: #fff;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
 }
 
 .mobile-menu__nav-link:hover, .mobile-menu__nav-link--home:hover, .mobile-menu__nav-link:focus, .mobile-menu__nav-link--home:focus {
-  color: #d41443;
+  color: #D41443;
   cursor: pointer;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
 }
 
 .mobile-menu__nav-link--home {
-  color: #d41443;
+  color: #D41443;
 }
 
 @media screen and (min-width: 768px) {
@@ -674,6 +682,7 @@ div.mobile-menu.disactive {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 1054px;
+    left: 20px;
   }
 }
 
@@ -737,6 +746,7 @@ div.mobile-menu.disactive {
     line-height: 34px;
     letter-spacing: 0.04em;
     margin-bottom: 15px;
+    margin-left: 60px;
     color: #ffa5ba;
   }
 }
@@ -782,6 +792,7 @@ div.mobile-menu.disactive {
     text-transform: uppercase;
     color: #d41443;
     margin-bottom: 270px;
+    margin-left: 60px;
   }
 }
 
@@ -1923,10 +1934,12 @@ div.mobile-menu.disactive {
 
 .cafe {
   background-color: #F0D1A5;
+  max-width: 80px;
 }
 
 .foodtrack {
   background-color: #C2E297;
+  max-width: 130px;
 }
 
 .cafe,
@@ -1965,6 +1978,12 @@ div.mobile-menu.disactive {
   font-size: 12px;
   font-style: normal;
   margin-bottom: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .weekly {
@@ -1983,6 +2002,12 @@ div.mobile-menu.disactive {
   font-style: normal;
   color: #FFA5BA;
   margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .contacts__mail,
@@ -1993,6 +2018,12 @@ div.mobile-menu.disactive {
   font-style: normal;
   color: #907E82;
   text-decoration: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .cafe--chicago, .cafe--new-york, .foodtrack--los-angeles {
@@ -2063,6 +2094,9 @@ div.mobile-menu.disactive {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(#907E82);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .grid-2 {
@@ -2070,12 +2104,18 @@ div.mobile-menu.disactive {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(#907E82);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .grid-3 {
   height: 61px;
   margin-top: 40px;
   margin-bottom: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .grid-1, .grid-2, .grid-3 {
@@ -2088,6 +2128,438 @@ div.mobile-menu.disactive {
   display: -ms-flexbox;
   display: flex;
   background-color: var(#fff);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (min-width: 780px) {
+  .contacts__list-box {
+    height: 665px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #FFF5F6;
+  }
+  .contacts__list {
+    background-color: #FFF5F6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  .buttons__section {
+    width: 772px;
+    height: 125px;
+  }
+  .cafe {
+    background-color: #F0D1A5;
+    max-width: 73px;
+  }
+  .foodtrack {
+    background-color: #C2E297;
+    max-width: 138px;
+  }
+  .cafe,
+  .foodtrack {
+    color: #fff;
+    border-radius: 6px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .city {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    font-style: normal;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .city-text {
+    color: #907E82;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 25px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .weekly {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    font-style: normal;
+    margin-top: 25px;
+  }
+  .timetable {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    color: #FFA5BA;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contacts__mail,
+  .contacts__tel {
+    font-size: 14px;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-style: normal;
+    color: #907E82;
+    text-decoration: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cafe--chicago, .cafe--new-york, .foodtrack--los-angeles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+    -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    height: 427px;
+    padding-bottom: 20px;
+    background-color: var(#fff);
+    width: 220px;
+    margin-bottom: 22px;
+  }
+  .locations {
+    color: #fff;
+    border-radius: 22px;
+    border-color: #D41342;
+    background-color: #D41342;
+    width: 161.45px;
+    height: 44px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.75;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .franchise {
+    color: #D41443;
+    border-radius: 22px;
+    border-color: var(#D41443);
+    background-color: #fff;
+    width: 161px;
+    height: 44px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.75;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .buttons__section {
+    background-color: #FFF5F6;
+    margin-top: 54px;
+  }
+  .grid-1 {
+    height: 132px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(#907E82);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grid-2 {
+    height: 146px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(#907E82);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grid-3 {
+    height: 61px;
+    margin-top: 40px;
+    margin-bottom: 43px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grid-1, .grid-2, .grid-3 {
+    width: 179px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(#fff);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list-box {
+    height: 702px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #FFF5F6;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  .contacts__list {
+    background-color: #FFF5F6;
+  }
+  .buttons__section {
+    width: 1280px;
+    height: 130px;
+  }
+  .cafe {
+    background-color: #F0D1A5;
+    max-width: 73px;
+  }
+  .foodtrack {
+    background-color: #C2E297;
+    max-width: 138px;
+  }
+  .cafe,
+  .foodtrack {
+    color: #fff;
+    border-radius: 4px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .city {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    font-style: normal;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .city-text {
+    color: #907E82;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 25px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .weekly {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    font-style: normal;
+    margin-top: 25px;
+  }
+  .timetable {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    color: #FFA5BA;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contacts__mail,
+  .contacts__tel {
+    font-size: 16px;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-style: normal;
+    color: #907E82;
+    text-decoration: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cafe--chicago, .cafe--new-york, .foodtrack--los-angeles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 3;
+        grid-template-rows: 3;
+    -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    height: 572px;
+    padding-bottom: 20px;
+    background-color: var(#fff);
+    width: 220px;
+    margin-bottom: 22px;
+  }
+  .locations {
+    color: #fff;
+    border-radius: 22px;
+    border-color: #D41342;
+    background-color: #D41342;
+    width: 161.45px;
+    height: 44px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.75;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .franchise {
+    color: #D41443;
+    border-radius: 22px;
+    border-color: var(#D41443);
+    background-color: #fff;
+    width: 161px;
+    height: 44px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.75;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .buttons__section {
+    background-color: #FFF5F6;
+    margin-top: 54px;
+  }
+  .grid-1 {
+    height: 132px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(#907E82);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grid-2 {
+    height: 146px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(#907E82);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grid-3 {
+    height: 61px;
+    margin-top: 40px;
+    margin-bottom: 43px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grid-1, .grid-2, .grid-3 {
+    width: 179px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(#fff);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .container--footer {
