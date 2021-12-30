@@ -21,10 +21,12 @@ background-color:#FFF5F6
 
 .cafe{
     background-color: $secondLabelColor;
+    max-width: 80px;
 }
 
 .foodtrack{
     background-color:$thirdLabelColor;
+    max-width: 130px;
 }
 
 .cafe,
@@ -59,6 +61,8 @@ background-color:#FFF5F6
     font-size: 12px;
     font-style: normal;
     margin-bottom: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
 
 
 }
@@ -79,6 +83,8 @@ background-color:#FFF5F6
     font-style: normal;
     color:$mainLabelColor;
     margin-bottom: 10px;
+     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .contacts__mail,
@@ -89,6 +95,8 @@ background-color:#FFF5F6
     font-style: normal;
     color:$secondPColor;
     text-decoration: none;
+    flex-wrap: wrap;
+    flex-direction: row;
 } 
 
 .cafe--chicago, .cafe--new-york, .foodtrack--los-angeles{
@@ -152,6 +160,8 @@ margin-top: 54px;
     border-bottom-width:1px;
     border-bottom-style: solid;
     border-bottom-color:var($secondPColor);
+    display: flex;
+ 
    
 }
 
@@ -160,6 +170,8 @@ margin-top: 54px;
     border-bottom-width:1px;
     border-bottom-style: solid;
     border-bottom-color:var($secondPColor);
+    display: flex;
+    
     
 }
 
@@ -167,6 +179,7 @@ margin-top: 54px;
     height:61px;
     margin-top: 40px;
     margin-bottom: 43px;
+    display: flex;
 }
 .grid-1,.grid-2,.grid-3{
     width:179px;
@@ -176,4 +189,6 @@ margin-top: 54px;
     padding-bottom: 43px;
     display: flex;
     background-color:var($secondTextColor);
+     flex-wrap: wrap;
+    flex-direction: row;
 }
