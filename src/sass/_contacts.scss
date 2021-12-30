@@ -1,42 +1,43 @@
-.contacts__headline{
-   display: none;
+.contacts__headline {
+  display: none;
 }
 
-.contacts__list-box{
-    height: 1321px;
-    display: flex;
-    
+.contacts__list-box {
+  height: 1321px;
+  display: flex;
 }
 
 // .contacts__list{
 
 // }
 
-.buttons__section{
-    width: 161.45px;
-    height: 98px;
+.buttons__section {
+  width: 161.45px;
+  height: 98px;
 }
 
-.cafe{
-    border-color: $secondLabelColor;
+.cafe {
+  border-color: $secondLabelColor;
 }
 
-.foodtrack{
-    border-color:$thirdLabelColor;
+.foodtrack {
+  border-color: $thirdLabelColor;
 }
 
-.cafe,.foodtrack{
-     color:$secondTextColor;
-    border-radius: 4px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    justify-content: flex-start;
-    align-items:flex-start;
+.cafe,
+.foodtrack {
+  color: $secondTextColor;
+  border-radius: 4px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
 .city{
     font-family: DM Sans;
     font-weight: 500;
@@ -172,7 +173,4 @@ margin-top: 54px;
     padding-bottom: 43px;
     display: flex;
     background-color:var($secondTextColor);
-
-
 }
-
