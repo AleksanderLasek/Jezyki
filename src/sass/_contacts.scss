@@ -396,6 +396,9 @@ margin-top: 54px;
   height: 702px;
   display: flex;
     background-color: #FFF5F6;
+    display: flex;
+    flex-direction: column;
+    column-count: 3;
 }
 
  .contacts__list{
